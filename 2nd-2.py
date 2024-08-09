@@ -332,6 +332,7 @@ else:
                 return
             elif response.choices[0].message.content == "1":
                 st.session_state.subject = False
+                st.write(st.session_state.subject)
                 st.session_state.flag = "5"
             elif response.choices[0].message.content == "2":
                 st.session_state.subject = True
